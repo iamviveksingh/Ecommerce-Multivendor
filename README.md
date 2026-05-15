@@ -1,54 +1,41 @@
-## Bazario - E-commerce Multivendor
+# Bazario — E-commerce Multivendor Platform
 
-A simple multivendor e-commerce application built with PHP (procedural + mysqli), Bootstrap, and plain JS.
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-### Prerequisites
-- PHP 8+
-- MySQL/MariaDB
-- Web server (XAMPP/WAMP/LAMP or Apache/Nginx)
-- Git
+A full-featured multivendor e-commerce platform built with PHP and MySQL. The system supports **3 distinct user roles** (Admin, Vendor, Buyer) with complete product catalog management, secure authentication, and order processing workflows across **10+ dynamic pages**.
 
-### Local Setup
-1. Clone the repository into your web root (e.g., `htdocs` in XAMPP):
+## ✨ Key Features
+
+- **Multi-Role Authentication** — Separate dashboards and permissions for Admin, Vendor, and Buyer
+- **Vendor Management** — Vendors can register, list products, manage inventory, and track orders
+- **Product Catalog** — Browse, search, and filter products across multiple vendors and categories
+- **Shopping Cart & Checkout** — Full cart management with order placement and confirmation
+- **Admin Dashboard** — Centralized control panel for managing users, vendors, products, and orders
+- **Responsive UI** — Bootstrap-powered responsive design for seamless mobile and desktop experience
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Backend | PHP (Procedural + mysqli) |
+| Database | MySQL |
+| Frontend | HTML, CSS, Bootstrap, JavaScript |
+| Server | Apache (XAMPP / WAMP) |
+
+## 🚀 Getting Started
+
+1. Clone the repository
    ```bash
-   git clone <your-repo-url> ecommerce_multivendor
+   git clone https://github.com/iamviveksingh/Ecommerce-Multivendor.git
    ```
-2. Create database and import schema/data as needed.
-3. Copy config and set credentials:
-   ```
-   cp config/database.example.php config/database.php
-   ```
-   Edit `config/database.php` with your DB user, password, and database name.
-4. Start your server and visit:
-   - Front store: `http://localhost/ecommerce_multivendor/store.php`
-   - Admin: `http://localhost/ecommerce_multivendor/admin/dashboard.php`
+2. Place the project folder inside your `htdocs` (XAMPP) or `www` (WAMP) directory
+3. Import the SQL file into phpMyAdmin to set up the database
+4. Start Apache and MySQL from XAMPP/WAMP
+5. Open `http://localhost/Ecommerce-Multivendor` in your browser
 
-### Database SQL dump
-- Place your SQL dump at `database/ecommerce_multivendor.sql` (or any name inside the `database/` folder).
-- Import via phpMyAdmin:
-  - Open phpMyAdmin → create database `ecommerce_multivendor` → Import → select the `.sql` file → Go.
-- Or via CLI:
-  ```bash
-  mysql -u <user> -p ecommerce_multivendor < database/ecommerce_multivendor.sql
-  ```
-  Replace `<user>` with your DB user. You’ll be prompted for the password.
+## 👨‍💻 Author
 
-### Deployment to GitHub
-From the project folder:
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git push -u origin main
-```
-
-### Notes
-- Sensitive config `config/database.php` is ignored by `.gitignore`. Commit `config/database.example.php` instead.
-- `assets/uploads/` is excluded; a `.gitkeep` placeholder keeps the folder structure.
-
-### License
-MIT
-
-
+**Vivek Singh** — [GitHub](https://github.com/iamviveksingh) · [LinkedIn](https://www.linkedin.com/in/vivek-singh1511/)
